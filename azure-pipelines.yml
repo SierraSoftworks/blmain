@@ -1,0 +1,15 @@
+trigger:
+  - main
+
+steps:
+  - task: Docker@2
+    name: build_docker
+    displayName: Build Docker Image
+    inputs:
+      command: buildAndPush
+      tags: |
+        latest
+        $(Build.BuildId)
+      Dockerfile: Dockerfile
+      repository: sierrasoftworks/blmain
+      containerRegistry: Docker Hub
