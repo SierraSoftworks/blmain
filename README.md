@@ -19,6 +19,9 @@ command line parameter to make them.
 **NOTE** You'll need a [Personal Access Token](https://github.com/settings/tokens/new) if you wish to make
 changes to your repositories. When generating one, please ensure that you grant access to the `repo` scope.
 
+The easiest way to run this tool is using `docker run --rm -it sierrasoftworks/blmain $OPTS`, however
+you can also build it using `dotnet publish -o ./out` if you've got the .NET Core 3.1 SDK installed.
+
 #### For a User
 If you're running this against your own GitHub account, you can specify your account
 name with `--user $YOUR_USERNAME`.
