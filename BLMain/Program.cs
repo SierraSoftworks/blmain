@@ -53,10 +53,13 @@ namespace BLMain
                         .AddSerilog(dispose: true)
                         .SetMinimumLevel(LogLevel.Information);
                 })
-                .AddSingleton(_ => new Credentials(configuration.GetValue<string>("Auth:Token")))
+                .AddSingleton(_ => configuration.GetValue<string>("Auth:Token") is string token && !string.IsNullOrEmpty(token) ? new Credentials(token) : default)
                 .AddSingleton(services => {
                     var client = new GitHubClient(new ProductHeaderValue("sierrasoftworks-blmain", "1.0"));
-                    client.Credentials = services.GetRequiredService<Credentials>();
+                    if (services.GetService<Credentials>() is Credentials credentials)
+                    {
+                        client.Credentials = credentials;
+                    }
                     return client;
                 });
 
@@ -82,6 +85,11 @@ namespace BLMain
                 To create a new personal access token, visit: https://github.com/settings/tokens/new
                 
                 NOTE: You will need to grant access to the `repo` scope if you want this tool to run correctly.");
+            }
+
+            if (!configuration.GetValue<bool>("Target::MakeChanges"))
+            {
+                logger.LogWarning("You have not specified the --apply flag, so no changes will be made to your repositories (only logs explaining what would be performed will be printed).");
             }
 
             var patternRegex = new Regex(configuration.GetValue<string>("Target:Pattern"), RegexOptions.Compiled | RegexOptions.IgnoreCase);
