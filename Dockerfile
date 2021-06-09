@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/core/sdk:3.1.409
+FROM mcr.microsoft.com/dotnet/core/sdk:3.1.410
 
 ADD ./ /src
 WORKDIR /src
