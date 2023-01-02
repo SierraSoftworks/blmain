@@ -145,7 +145,7 @@ namespace BLMain
                         {
                             using (logger.BeginScope("Failed to apply changes to repo {Repo}.", repo.FullName))
                             {
-                                logger.LogError(ex, " Received an HTTP {StatusCode} response from GitHub saying: {Message}.", repo.FullName, ex.StatusCode, ex.ApiError.Message);
+                                logger.LogError(ex, "Error updating repo {Repo}, received an HTTP {StatusCode} response from GitHub saying: {Message}.", repo.FullName, ex.StatusCode, ex.ApiError.Message);
                             }
                         }
                     }

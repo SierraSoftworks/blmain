@@ -27,7 +27,8 @@ namespace BLMain.Plugins
 
                 if (!readOnly)
                 {
-                    await this.client.Repository.Edit(repo.Id, new RepositoryUpdate(repo.Name) {
+                    await this.client.Repository.Edit(repo.Id, new RepositoryUpdate {
+                        Name = repo.Name,
                         DefaultBranch = "main"
                     });
                 }
