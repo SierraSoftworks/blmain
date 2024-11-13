@@ -5,7 +5,7 @@ WORKDIR /src
 
 RUN dotnet publish -c release -o /out
 
-FROM mcr.microsoft.com/dotnet/runtime:8.0
+FROM mcr.microsoft.com/dotnet/runtime:9.0
 COPY --from=0 /out /app
 
 WORKDIR /app
