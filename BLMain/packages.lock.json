@@ -34,11 +34,11 @@
       },
       "Microsoft.Extensions.DependencyInjection": {
         "type": "Direct",
-        "requested": "[10.0.0, )",
-        "resolved": "10.0.0",
-        "contentHash": "f0RBabswJq+gRu5a+hWIobrLWiUYPKMhCD9WO3sYBAdSy3FFH14LMvLVFZc2kPSCimBLxSuitUhsd6tb0TAY6A==",
+        "requested": "[10.0.1, )",
+        "resolved": "10.0.1",
+        "contentHash": "zerXV0GAR9LCSXoSIApbWn+Dq1/T+6vbXMHGduq1LoVQRHT0BXsGQEau0jeLUBUcsoF/NaUT8ADPu8b+eNcIyg==",
         "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.0"
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.1"
         }
       },
       "Microsoft.Extensions.Logging": {
@@ -62,8 +62,7 @@
           "Microsoft.Extensions.Logging": "10.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "10.0.0",
           "Microsoft.Extensions.Logging.Configuration": "10.0.0",
-          "Microsoft.Extensions.Options": "10.0.0",
-          "System.Text.Json": "10.0.0"
+          "Microsoft.Extensions.Options": "10.0.0"
         }
       },
       "Octokit": {
@@ -107,16 +106,15 @@
       },
       "Microsoft.Extensions.DependencyInjection.Abstractions": {
         "type": "Transitive",
-        "resolved": "10.0.0",
-        "contentHash": "L3AdmZ1WOK4XXT5YFPEwyt0ep6l8lGIPs7F5OOBZc77Zqeo01Of7XXICy47628sdVl0v/owxYJTe86DTgFwKCA=="
+        "resolved": "10.0.1",
+        "contentHash": "oIy8fQxxbUsSrrOvgBqlVgOeCtDmrcynnTG+FQufcUWBrwyPfwlUkCDB2vaiBeYPyT+20u9/HeuHeBf+H4F/8g=="
       },
       "Microsoft.Extensions.Logging.Abstractions": {
         "type": "Transitive",
         "resolved": "10.0.0",
         "contentHash": "FU/IfjDfwaMuKr414SSQNTIti/69bHEMb+QKrskRb26oVqpx3lNFXMjs/RC9ZUuhBhcwDM2BwOgoMw+PZ+beqQ==",
         "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.0",
-          "System.Diagnostics.DiagnosticSource": "10.0.0"
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.0"
         }
       },
       "Microsoft.Extensions.Logging.Configuration": {
@@ -164,30 +162,6 @@
         "type": "Transitive",
         "resolved": "4.2.0",
         "contentHash": "gmoWVOvKgbME8TYR+gwMf7osROiWAURterc6Rt2dQyX7wtjZYpqFiA/pY6ztjGQKKV62GGCyOcmtP1UKMHgSmA=="
-      },
-      "System.Diagnostics.DiagnosticSource": {
-        "type": "Transitive",
-        "resolved": "10.0.0",
-        "contentHash": "0KdBK+h7G13PuOSC2R/DalAoFMvdYMznvGRuICtkdcUMXgl/gYXsG6z4yUvTxHSMACorWgHCU1Faq0KUHU6yAQ=="
-      },
-      "System.IO.Pipelines": {
-        "type": "Transitive",
-        "resolved": "10.0.0",
-        "contentHash": "M1eb3nfXntaRJPrrMVM9EFS8I1bDTnt0uvUS6QP/SicZf/ZZjydMD5NiXxfmwW/uQwaMDP/yX2P+zQN1NBHChg=="
-      },
-      "System.Text.Encodings.Web": {
-        "type": "Transitive",
-        "resolved": "10.0.0",
-        "contentHash": "257hh1ep1Gqm1Lm0ulxf7vVBVMJuGN6EL4xSWjpi46DffXzm1058IiWsfSC06zSm7SniN+Tb5160UnXsSa8rRg=="
-      },
-      "System.Text.Json": {
-        "type": "Transitive",
-        "resolved": "10.0.0",
-        "contentHash": "1Dpjwq9peG/Wt5BNbrzIhTpclfOSqBWZsUO28vVr59yQlkvL5jLBWfpfzRmJ1OY+6DciaY0DUcltyzs4fuZHjw==",
-        "dependencies": {
-          "System.IO.Pipelines": "10.0.0",
-          "System.Text.Encodings.Web": "10.0.0"
-        }
       }
     }
   }
