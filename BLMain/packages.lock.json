@@ -24,12 +24,12 @@
       },
       "Microsoft.Extensions.Configuration.CommandLine": {
         "type": "Direct",
-        "requested": "[10.0.0, )",
-        "resolved": "10.0.0",
-        "contentHash": "CRj5clwZciVs46GMhAthkFq3+JiNM15Bz9CRlCZLBmRdggD6RwoBphRJ+EUDK2f+cZZ1L2zqVaQrn1KueoU5Kg==",
+        "requested": "[10.0.1, )",
+        "resolved": "10.0.1",
+        "contentHash": "s5cxcdtIig66YT3J+7iHflMuorznK8kXuwBBPHMp4KImx5ZGE3FRa1Nj9fI/xMwFV+KzUMjqZ2MhOedPH8LiBQ==",
         "dependencies": {
-          "Microsoft.Extensions.Configuration": "10.0.0",
-          "Microsoft.Extensions.Configuration.Abstractions": "10.0.0"
+          "Microsoft.Extensions.Configuration": "10.0.1",
+          "Microsoft.Extensions.Configuration.Abstractions": "10.0.1"
         }
       },
       "Microsoft.Extensions.DependencyInjection": {
